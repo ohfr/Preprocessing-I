@@ -135,12 +135,12 @@ body {
   height: 100%;
 }
 .sectionWidth {
-  width: 45%;
-  margin: 20px 25px;
+  width: 46%;
+  margin: 20px 20px 25px 0;
 }
 .h2Weight {
-  font-size: 25px;
-  border-bottom: 2px solid black;
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
 .flexCenter {
   display: flex;
@@ -175,13 +175,13 @@ body {
 }
 .container header nav a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: black;
   margin-bottom: 20px;
 }
 @media (max-width: 500px) {
   .container header nav a {
-    font-size: 20px;
+    font-size: 1.3px;
   }
 }
 .container header nav a:hover {
@@ -189,13 +189,16 @@ body {
   color: #bba1b2;
 }
 .container header .heading {
-  background: #BFBFBF;
+  background: #4D525B;
 }
 .container header .heading h1 {
   font-size: 2rem;
+  color: #DEE2E7;
+  padding-bottom: 20px;
 }
 .container header .heading p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  color: #DEE2E7;
 }
 .container .content {
   display: flex;
@@ -203,10 +206,11 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   margin: 20px 0;
+  border-bottom: 2px solid #DEE2E7;
 }
 .container .content section {
-  width: 45%;
-  margin: 20px 25px;
+  width: 46%;
+  margin: 20px 20px 25px 0;
   padding: 10px;
 }
 @media (max-width: 500px) {
@@ -217,17 +221,17 @@ body {
 }
 .container .content section h2 {
   text-align: center;
-  font-size: 25px;
-  border-bottom: 2px solid black;
+  font-size: 1.5rem;
+  text-decoration: underline;
   margin-bottom: 10px;
 }
 .container .content section p {
-  font-size: 20px;
+  font-size: 1.2rem;
   padding: 5px;
   line-height: 1.35;
 }
 .container .content section ul {
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: center;
 }
 .container .content section ul li {
@@ -238,6 +242,9 @@ body {
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: space-between;
+  border-bottom: 2px solid #DEE2E7;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 @media (max-width: 500px) {
   .container .bottom {
@@ -247,28 +254,31 @@ body {
 }
 .container .bottom h2 {
   width: 100%;
-  font-size: 25px;
-  border-bottom: 2px solid black;
-  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
   margin-bottom: 20px;
 }
 .container .bottom section {
-  width: 45%;
-  margin: 20px 25px;
+  width: 46%;
+  margin: 20px 20px 25px 0;
 }
 .container .bottom section img {
   border-radius: 50%;
   width: 60%;
 }
 .container .bottom section h3 {
-  font-size: 25px;
-  border-bottom: 2px solid black;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin: 20px 0;
+}
+.container .bottom section p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 .container .contact h2 {
-  font-size: 25px;
-  border-bottom: 2px solid black;
-  text-align: center;
-  margin-top: 20px;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin: 20px 0;
 }
 .container .contact form {
   display: flex;
@@ -278,4 +288,9 @@ body {
 .container .contact form input {
   padding: 5px 10px;
   margin: 20px 0;
+}
+.container .contact form button {
+  padding: 5px 10px;
+  background: white;
+  margin-left: 55px;
 }

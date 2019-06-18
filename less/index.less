@@ -59,20 +59,21 @@ html, body {
 
 
 
-@Perano:#9bcbf2;
+@Trout:#4D525B;
 @Casper: #abb6d2;
 @Lily: #bba1b2;
 @Silver: #BFBFBF;
 @CanCan: #D591A4;
+@Geyser: #DEE2E7;
 
 .sectionWidth {
-	width: 45%;
-	margin: 20px 25px;
+	width: 46%;
+	margin: 20px 20px 25px 0;
 }
 
 .h2Weight {
-	font-size: 25px;
-	border-bottom: 2px solid black;
+	font-size: 1.5rem;
+	text-decoration: underline;
 }
 
 .flexCenter {
@@ -101,12 +102,12 @@ html, body {
 			.flexCenter();
 			a {
 				text-decoration: none;
-				font-size: 25px;
+				font-size: 1.5rem;
 				color: black;
 				margin-bottom: 20px;
 				
 				@media (max-width: 500px) {
-					font-size:  20px;
+					font-size:  1.3px;
 				}
 			
 			}
@@ -116,12 +117,15 @@ html, body {
 			}
 		}
 		.heading {
-			background: @Silver;
+			background: @Trout;
 			h1 {
 				font-size: 2rem;
+				color: @Geyser;
+				padding-bottom: 20px;
 			}
 			p {
-				font-size: 1.4rem;
+				font-size: 1.3rem;
+				color: @Geyser;
 			}
 		}
 
@@ -130,6 +134,7 @@ html, body {
 		.flexStart();
 		// border: 2px solid @CanCan;
 		margin: 20px 0;
+		border-bottom: 2px solid @Geyser;
 		section {
 		.sectionWidth();
 		padding: 10px;
@@ -143,12 +148,12 @@ html, body {
 				margin-bottom: 10px;
 			}
 			p {
-				font-size: 20px;
+				font-size: 1.2rem;
 				padding: 5px;
 				line-height: 1.35;
 			}
 			ul {
-				font-size: 20px;
+				font-size: 1.2rem;
 				text-align: center;
 				li {
 					padding: 5px;
@@ -158,6 +163,9 @@ html, body {
 	}
 	.bottom {
 		.flexStart();
+		border-bottom: 2px solid @Geyser;
+		padding-bottom: 20px;
+		padding-top: 20px;
 		@media (max-width: 500px) {
 			flex-flow: column wrap;
 			align-items: center;
@@ -165,7 +173,6 @@ html, body {
 		h2 {
 			width: 100%;
 			.h2Weight();
-			text-align: center;
 			margin-bottom: 20px;
 		}
 		section {
@@ -176,14 +183,19 @@ html, body {
 			}
 			h3 {
 				.h2Weight();
+				margin: 20px 0;
+			}
+			p{
+				margin-bottom: 10px;
+				font-size: 1.2rem;
 			}
 		}
 	}
 	.contact {
 		h2 {
 			.h2Weight();
-			text-align: center;
-			margin-top: 20px;
+			// text-align: center;
+			margin: 20px 0;
 		}
 		form {
 			display: flex;
@@ -192,6 +204,11 @@ html, body {
 			input {
 				padding: 5px 10px;
 				margin: 20px 0;
+			}
+			button {
+				padding: 5px 10px;
+				background: white;
+				margin-left: 55px;
 			}
 		}
 	}
