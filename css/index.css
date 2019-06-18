@@ -1,1 +1,260 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.sectionWidth {
+  width: 45%;
+  margin: 20px 25px;
+}
+.h2Weight {
+  font-size: 25px;
+  border-bottom: 2px solid black;
+}
+.flexCenter {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.flexStart {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+.container header {
+  text-align: center;
+}
+.container header nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.container header nav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    font-size: 20px;
+  }
+}
+.container header nav a:hover {
+  text-decoration: underline;
+  color: #bba1b2;
+}
+.container header .heading {
+  background: #BFBFBF;
+}
+.container header .heading h1 {
+  font-size: 30px;
+}
+.container header .heading p {
+  font-size: 25px;
+  border-bottom: 2px solid black;
+}
+.container .content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 2px solid #D591A4;
+  margin: 20px 0;
+}
+.container .content section {
+  width: 45%;
+  margin: 20px 25px;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .container .content section {
+    width: 100%;
+    flex-flow: column wrap;
+  }
+}
+.container .content section h2 {
+  text-align: center;
+  font-size: 25px;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+.container .content section p {
+  font-size: 20px;
+  padding: 5px;
+  line-height: 1.35;
+}
+.container .content section ul {
+  font-size: 20px;
+  text-align: center;
+}
+.container .content section ul li {
+  padding: 5px;
+}
+.container .bottom {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.container .bottom h2 {
+  width: 100%;
+  font-size: 25px;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+.container .bottom section {
+  width: 45%;
+  margin: 20px 25px;
+}
+.container .bottom section img {
+  border-radius: 50%;
+  width: 60%;
+}
+.container .bottom section h3 {
+  font-size: 25px;
+  border-bottom: 2px solid black;
+}
