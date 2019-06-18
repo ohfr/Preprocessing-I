@@ -54,7 +54,7 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
 
@@ -103,6 +103,8 @@ html, body {
 				text-decoration: none;
 				font-size: 25px;
 				color: black;
+				margin-bottom: 20px;
+				
 				@media (max-width: 500px) {
 					font-size:  20px;
 				}
@@ -116,17 +118,17 @@ html, body {
 		.heading {
 			background: @Silver;
 			h1 {
-				font-size: 30px;
+				font-size: 2rem;
 			}
 			p {
-				.h2Weight();
+				font-size: 1.4rem;
 			}
 		}
 
 	}
 	.content {
 		.flexStart();
-		border: 2px solid @CanCan;
+		// border: 2px solid @CanCan;
 		margin: 20px 0;
 		section {
 		.sectionWidth();
@@ -156,10 +158,15 @@ html, body {
 	}
 	.bottom {
 		.flexStart();
+		@media (max-width: 500px) {
+			flex-flow: column wrap;
+			align-items: center;
+		}
 		h2 {
 			width: 100%;
 			.h2Weight();
 			text-align: center;
+			margin-bottom: 20px;
 		}
 		section {
 			.sectionWidth();
@@ -169,6 +176,22 @@ html, body {
 			}
 			h3 {
 				.h2Weight();
+			}
+		}
+	}
+	.contact {
+		h2 {
+			.h2Weight();
+			text-align: center;
+			margin-top: 20px;
+		}
+		form {
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: flex-start;
+			input {
+				padding: 5px 10px;
+				margin: 20px 0;
 			}
 		}
 	}

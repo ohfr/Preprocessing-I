@@ -177,6 +177,7 @@ body {
   text-decoration: none;
   font-size: 25px;
   color: black;
+  margin-bottom: 20px;
 }
 @media (max-width: 500px) {
   .container header nav a {
@@ -191,18 +192,16 @@ body {
   background: #BFBFBF;
 }
 .container header .heading h1 {
-  font-size: 30px;
+  font-size: 2rem;
 }
 .container header .heading p {
-  font-size: 25px;
-  border-bottom: 2px solid black;
+  font-size: 1.4rem;
 }
 .container .content {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: space-between;
-  border: 2px solid #D591A4;
   margin: 20px 0;
 }
 .container .content section {
@@ -240,11 +239,18 @@ body {
   align-items: flex-start;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .container .bottom {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
 .container .bottom h2 {
   width: 100%;
   font-size: 25px;
   border-bottom: 2px solid black;
   text-align: center;
+  margin-bottom: 20px;
 }
 .container .bottom section {
   width: 45%;
@@ -257,4 +263,19 @@ body {
 .container .bottom section h3 {
   font-size: 25px;
   border-bottom: 2px solid black;
+}
+.container .contact h2 {
+  font-size: 25px;
+  border-bottom: 2px solid black;
+  text-align: center;
+  margin-top: 20px;
+}
+.container .contact form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+.container .contact form input {
+  padding: 5px 10px;
+  margin: 20px 0;
 }
