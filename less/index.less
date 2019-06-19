@@ -55,13 +55,15 @@ table {
 
 html, body {
 	height: 100%;
+	color: white;
+	background: @Trout;
 }
 
 
 
 @Trout:#4D525B;
 @Casper: #abb6d2;
-@Lily: #bba1b2;
+@Viridian: #458C62;
 @Silver: #BFBFBF;
 @CanCan: #D591A4;
 @Geyser: #DEE2E7;
@@ -103,7 +105,7 @@ html, body {
 			a {
 				text-decoration: none;
 				font-size: 1.5rem;
-				color: black;
+				color: @Geyser;
 				margin-bottom: 20px;
 				
 				@media (max-width: 500px) {
@@ -113,11 +115,13 @@ html, body {
 			}
 			a:hover {
 				text-decoration: underline;
-				color: @Lily;
+				color: @Viridian;
 			}
 		}
+	
 		.heading {
-			background: @Trout;
+			background: @Viridian;
+			border-radius: 10px;
 			h1 {
 				font-size: 2rem;
 				color: @Geyser;
@@ -127,6 +131,16 @@ html, body {
 				font-size: 1.3rem;
 				color: @Geyser;
 			}
+			a {
+				margin: 10px;
+				padding: 10px;
+				text-decoration: none;
+				color: @Geyser;
+				img {
+					padding: 10px 10px 0 0;
+				}
+				
+			}
 		}
 
 	}
@@ -134,7 +148,8 @@ html, body {
 		.flexStart();
 		// border: 2px solid @CanCan;
 		margin: 20px 0;
-		border-bottom: 2px solid @Geyser;
+		border-bottom: 2px solid @Viridian;
+		border-radius: 10px;
 		section {
 		.sectionWidth();
 		padding: 10px;
@@ -162,10 +177,14 @@ html, body {
 		}
 	}
 	.bottom {
-		.flexStart();
-		border-bottom: 2px solid @Geyser;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-evenly;
+		border-bottom: 2px solid @Viridian;
 		padding-bottom: 20px;
 		padding-top: 20px;
+		border-radius: 10px;
 		@media (max-width: 500px) {
 			flex-flow: column wrap;
 			align-items: center;
@@ -177,6 +196,7 @@ html, body {
 		}
 		section {
 			.sectionWidth();
+			padding-bottom: 20px;
 			img {
 				border-radius: 50%;
 				width: 60%;
@@ -186,12 +206,21 @@ html, body {
 				margin: 20px 0;
 			}
 			p{
-				margin-bottom: 10px;
+				margin-bottom: 30px;
 				font-size: 1.2rem;
+			}
+			a {
+				color: @Geyser;
+				font-size: 1.2rem;
+				text-decoration: none;
+				border: 1px solid @Geyser;
+				padding: 5px 10px;
 			}
 		}
 	}
 	.contact {
+		margin-bottom: 20px;
+		padding-top: 20px;
 		h2 {
 			.h2Weight();
 			// text-align: center;
