@@ -1,1 +1,322 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  color: white;
+  background: #4D525B;
+}
+.sectionWidth {
+  width: 46%;
+  margin: 20px 20px 25px 0;
+}
+.h2Weight {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.flexCenter {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.flexStart {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+.container header {
+  text-align: center;
+}
+.container header nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.container header nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #DEE2E7;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    font-size: 1.3px;
+  }
+}
+.container header nav a:hover {
+  text-decoration: underline;
+  color: #458C62;
+}
+.container header .heading {
+  background: #458C62;
+  border-radius: 10px;
+}
+.container header .heading h1 {
+  font-size: 2rem;
+  color: #DEE2E7;
+  padding-bottom: 20px;
+}
+.container header .heading p {
+  font-size: 1.3rem;
+  color: #DEE2E7;
+}
+.container header .heading a {
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #DEE2E7;
+}
+.container header .heading a img {
+  padding: 10px 10px 0 0;
+}
+.container .content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-bottom: 2px solid #458C62;
+  border-radius: 10px;
+}
+.container .content section {
+  width: 46%;
+  margin: 20px 20px 25px 0;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .container .content section {
+    width: 100%;
+    flex-flow: column wrap;
+  }
+}
+.container .content section h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.container .content section p {
+  font-size: 1.2rem;
+  padding: 5px;
+  line-height: 1.35;
+}
+.container .content section ul {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.container .content section ul li {
+  padding: 5px;
+}
+.container .bottom {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 2px solid #458C62;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .container .bottom {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
+.container .bottom h2 {
+  width: 100%;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.container .bottom section {
+  width: 46%;
+  margin: 20px 20px 25px 0;
+  padding-bottom: 20px;
+}
+.container .bottom section img {
+  border-radius: 50%;
+  width: 60%;
+}
+.container .bottom section h3 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin: 20px 0;
+}
+.container .bottom section p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+.container .bottom section a {
+  color: #DEE2E7;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: 1px solid #DEE2E7;
+  padding: 5px 10px;
+}
+.container .contact {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.container .contact h2 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin: 20px 0;
+}
+.container .contact form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+.container .contact form input {
+  padding: 5px 10px;
+  margin: 20px 0;
+}
+.container .contact form button {
+  padding: 5px 10px;
+  background: white;
+  margin-left: 55px;
+}
